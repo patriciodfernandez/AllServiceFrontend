@@ -1,6 +1,4 @@
 import React from "react";
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Container from "react-bootstrap/Container";
 import reparaciones from "../../assets/images/reparaciones.jpg";
 import repuestos from "../../assets/images/repuestos.jpg";
 import restauraciones from "../../assets/images/restauraciones.jpg";
