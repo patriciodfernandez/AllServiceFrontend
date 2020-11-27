@@ -8,20 +8,15 @@ const Slider = () => {
     <div>
       <Carousel>
         <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={slider1}
-            alt="Imagen 1"
-          />
+          <img className="d-block w-100" src={slider1} alt="Imagen 1" />
         </Carousel.Item>
         <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={slider2}
-            alt="Imagen 2"
-          />
+          <img className="d-block w-100" src={slider2} alt="Imagen 2" />
         </Carousel.Item>
       </Carousel>
+      <div className=" grisoscurobg p-5">
+          <h1 className="text-center verdetext letragorda mb-0">35 AÑOS DE TRAYECTORIA NOS AVALAN</h1>
+      </div>
     </div>
   );
 };
