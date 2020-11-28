@@ -3,7 +3,7 @@ import quienessomos from "../../assets/images/quienes-somos.jpg";
 
 const QuienesSomos = () => {
   return (
-    <div className="row">
+    <div className="row no-gutters">
       <div className="col-md-5 col-sm-12 p-0">
         <img className="w-100 h-100" src={quienessomos} alt="quienes somos" />
       </div>

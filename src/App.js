@@ -21,7 +21,7 @@ function App() {
         <Route exact path="/">
           <Inicio></Inicio>
         </Route>
-        <Route exact path="/slider">
+        {/* <Route exact path="/slider">
           <Slider></Slider>
         </Route>
         <Route exact path="/quienessomos">
@@ -38,7 +38,7 @@ function App() {
         </Route>
         <Route exact path="/marca">
           <Marcas></Marcas>
-        </Route>
+        </Route> */}
         <Route exact path="/contacto">
           <Contacto></Contacto>
         </Route>

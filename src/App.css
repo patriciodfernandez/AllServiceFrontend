@@ -1,6 +1,9 @@
 *{
   font-family: "Nunito Sans", sans-serif;
 }
+/* .grisnavbg{
+  background-color: #afafaf;
+} */
 .letragorda{
   /* font-family: 'Passion One', cursive; */
   font-family: 'Roboto', sans-serif;
@@ -17,8 +20,63 @@
   background-color: #282828;
 }
 .verdebg{
-  background-color: #8da639;
+  background-color: #ABC526;;
 }
 .grisclarobg{
   background-color: #444244;
+}
+
+.tamanio{
+  font-size: small;
+}
+
+.fondonegro{
+  background-color: black;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*X-SMALL DEVICES PUBLICIDAD*/
+@media all and (max-width: 576px) {
+  .enchico{
+    display: none;
+  }
+  #serviciosMdlg{
+    display: none;
+  }
+}
+
+/*SMALL DEVICES*/
+@media all and (min-width: 576px) and (max-width: 767px) {
+  .enchico{
+    display: none;
+  }
+  #serviciosMdlg{
+    display: none;
+  }
+}
+
+/*MEDIUM DEVICES*/
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .enchico{
+    display: none;
+  }
+  #serviciosSmall{
+    display: none;
+  }
+}
+
+/*LARGE DEVICES*/
+@media all and (min-width: 991px) and (max-width: 1200px) {
+  #serviciosSmall{
+    display: none;
+  }  
+}
+  
+  /*XTRA LARGE DEVICES*/
+@media all and (min-width: 1200px) {
+  #serviciosSmall{
+    display: none;
+  }
 }
