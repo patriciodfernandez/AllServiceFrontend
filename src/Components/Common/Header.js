@@ -55,24 +55,24 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link exact={true} to="/" className="nav-link text-light">
+              <NavLink exact={true} to="/" className="nav-link text-light">
                 INICIO
-              </Nav.Link>
-              {/* <Nav.Link
+              </NavLink>
+              <NavLink
                 exact={true}
                 to="/nuestrosservicios"
                 className="nav-link">
                 SERVICIOS
-              </Nav.Link>
-              <Nav.Link
+              </NavLink>
+              <NavLink
                 exact={true}
                 to="/productosquereparamos"
                 className="nav-link">
                 PRODUCTOS QUE REPARAMOS
-              </Nav.Link> */}
-              <Nav.Link exact={true} to="/contacto" className="nav-link text-light">
+              </NavLink>
+              <NavLink exact={true} to="/contacto" className="nav-link text-light">
                 CONTACTO
-              </Nav.Link>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </div>
