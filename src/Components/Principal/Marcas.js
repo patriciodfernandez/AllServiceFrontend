@@ -25,7 +25,7 @@ const Marcas = () => {
         </div>
       </div>
       {/* FIN TITULO */}
-      <div className="row no-gutters mb-5">
+      <div className="row no-gutters">
         <div className="col-sm-12 col-md-3 px-5">
           <img className="w-100" src={volcan} alt="volcan" />
         </div>

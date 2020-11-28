@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className="sticky-top">
       {/* NAV VERDE */}
-      <div className="enchico">
+      <div className="noxs nosm nomd">
         <Navbar className="verdebg p-1 navverde">
           <div className="container">
             <p className="text-light my-auto tamanio">

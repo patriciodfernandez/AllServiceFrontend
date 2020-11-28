@@ -34,49 +34,44 @@
   background-color: black;
 }
 
+.listamasgrande{
+  font-size: large;
+}
+
 
 /*MEDIA QUERIES*/
 
 /*X-SMALL DEVICES PUBLICIDAD*/
 @media all and (max-width: 576px) {
-  .enchico{
-    display: none;
-  }
-  #serviciosMdlg{
+  .noxs{
     display: none;
   }
 }
 
 /*SMALL DEVICES*/
 @media all and (min-width: 576px) and (max-width: 767px) {
-  .enchico{
-    display: none;
-  }
-  #serviciosMdlg{
+  .nosm{
     display: none;
   }
 }
 
 /*MEDIUM DEVICES*/
 @media all and (min-width: 768px) and (max-width: 991px) {
-  .enchico{
-    display: none;
-  }
-  #serviciosSmall{
+  .nomd{
     display: none;
   }
 }
 
 /*LARGE DEVICES*/
 @media all and (min-width: 991px) and (max-width: 1200px) {
-  #serviciosSmall{
+  .nolg{
     display: none;
-  }  
+  }
 }
   
   /*XTRA LARGE DEVICES*/
 @media all and (min-width: 1200px) {
-  #serviciosSmall{
+  .noxl{
     display: none;
   }
 }

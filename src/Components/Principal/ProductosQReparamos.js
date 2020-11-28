@@ -13,7 +13,7 @@ const ProductosQReparamos = () => {
     <div>
       {/* TITULO */}
       <div className="mt-3 row no-gutters">
-        <div className="col-md-3 container enchico">
+        <div className="col-md-3 container noxs nosm nomd">
           <hr></hr>
         </div>
         <div className="col-lg-6 col-sm-12">
@@ -21,7 +21,7 @@ const ProductosQReparamos = () => {
             PRODUCTOS QUE REPARAMOS
           </h1>
         </div>
-        <div className="col-md-3 container enchico">
+        <div className="col-md-3 container noxs nosm nomd">
           <hr></hr>
         </div>
       </div>
