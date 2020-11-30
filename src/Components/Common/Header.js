@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+// import NavLink from "react-bootstrap/Nav.Link";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo-allservice.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookSquare, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
         <Navbar className="verdebg p-1 navverde">
           <div className="container">
             <p className="text-light my-auto tamanio">
-              Corrientes 2514, - San Miguel de Tucumán | 4239995 - 4233733 |
+              Corrientes 2514 - San Miguel de Tucumán | 4239995 - 4233733 |
               3815231792 (Service) | 3816812468 (Repuestos)
             </p>
             <div>
@@ -25,7 +26,7 @@ const Header = () => {
               >
                 <FontAwesomeIcon
                   className="mr-3"
-                  icon={faFacebook}
+                  icon={faFacebookSquare}
                   color="#fff"
                   size="1x"
                 />
