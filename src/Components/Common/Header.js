@@ -1,11 +1,9 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-// import NavLink from "react-bootstrap/Nav.Link";
-import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo-allservice.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookSquare, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
   return (
@@ -15,7 +13,7 @@ const Header = () => {
         <Navbar className="verdebg p-1 navverde">
           <div className="container">
             <p className="text-light my-auto tamanio">
-              Corrientes 2514 - San Miguel de Tucumán | 4239995 - 4233733 |
+              Corrientes 2514, - San Miguel de Tucumán | 4239995 - 4233733 |
               3815231792 (Service) | 3816812468 (Repuestos)
             </p>
             <div>
@@ -26,7 +24,7 @@ const Header = () => {
               >
                 <FontAwesomeIcon
                   className="mr-3"
-                  icon={faFacebookSquare}
+                  icon={faFacebook}
                   color="#fff"
                   size="1x"
                 />
@@ -50,30 +48,30 @@ const Header = () => {
       {/* NAV OSCURO */}
       <Navbar bg="dark" variant="dark" expand="lg">
         <div className="container py-1">
-          <NavLink exact={true} to="/">
+          <Nav.Link exact={true} href="/#iniciotop">
             <img src={logo} alt="logo del NavBar" width="70px"></img>
-          </NavLink>
+          </Nav.Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <NavLink exact={true} to="/" className="nav-link text-light">
+              <Nav.Link exact={true} href="/#iniciotop" className="nav-link text-light">
                 INICIO
-              </NavLink>
-              <NavLink
+              </Nav.Link>
+              <Nav.Link
                 exact={true}
-                to="/nuestrosservicios"
-                className="nav-link">
+                href="/#servicios"
+                className="nav-link text-light">
                 SERVICIOS
-              </NavLink>
-              <NavLink
+              </Nav.Link>
+              <Nav.Link
                 exact={true}
-                to="/productosquereparamos"
-                className="nav-link">
+                href="/#productosqreparamos"
+                className="nav-link text-light">
                 PRODUCTOS QUE REPARAMOS
-              </NavLink>
-              <NavLink exact={true} to="/contacto" className="nav-link text-light">
+              </Nav.Link>
+              <Nav.Link exact={true} href="/contacto/#iniciotop" className="nav-link text-light">
                 CONTACTO
-              </NavLink>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>

@@ -39,6 +39,9 @@
 }
 
 
+html{
+  scroll-behavior: smooth;
+}
 /*MEDIA QUERIES*/
 
 /*X-SMALL DEVICES PUBLICIDAD*/

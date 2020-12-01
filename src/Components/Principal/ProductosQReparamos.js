@@ -10,7 +10,7 @@ import lavavajillas from "../../assets/images/productos/lavavajillas.png";
 
 const ProductosQReparamos = () => {
   return (
-    <div>
+    <div id="productosqreparamos">
       {/* TITULO */}
       <div className="mt-3 row no-gutters">
         <div className="col-md-3 container noxs nosm nomd">

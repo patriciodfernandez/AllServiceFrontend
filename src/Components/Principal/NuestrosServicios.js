@@ -7,7 +7,7 @@ const NuestrosServicios = () => {
   return (
     <div>
       {/* TITULO GRANDE */}
-      <div className="verdebg p-5">
+      <div className="verdebg p-5" id="servicios">
         <h1 className="text-center grisoscurotext letragorda mb-0">
           NUESTROS SERVICIOS
         </h1>

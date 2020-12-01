@@ -4,20 +4,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 
 const Footer = () => {
   return (
     <div className="bg-dark">
       <div className="row no-gutters container px-5 pt-5">
         <div className="col-sm-12 col-md-4 mb-4 text-center">
-          <Link exact={true} to="/">
+          <Nav.Link exact={true} href="/#iniciotop">
             <img src={logob} alt="logo del Footer" width="100px"></img>
-          </Link>
+          </Nav.Link>
         </div>
         <div className="col-sm-12 col-md-4 mb-4 mt-1">
            <div className="noxs nosm text-left"> <Link className="text-light">INICIO</Link><br></br>
             <Link className="text-light">SERVICIOS</Link><br></br>
-            <Link className="text-light">MARCAS QUE REPARAMOS</Link><br></br>
+            <Link className="text-light">PRODUCTOS QUE REPARAMOS</Link><br></br>
             <Link className="text-light">CONTACTO</Link><br></br>
             </div>
             <a
