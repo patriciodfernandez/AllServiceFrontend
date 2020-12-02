@@ -11,11 +11,11 @@ import usman from "../../assets/images/marcas/usman.png";
 const Marcas = () => {
   return (
     <div>
-      <div className="my-5 pt-3 row no-gutters">
+      <div className="my-5 pt-3 row no-gutters ">
         <div className="col-md-3 container enchico">
           <hr></hr>
         </div>
-        <div className="col-lg-6 col-sm-12">
+        <div className="col-lg-6 col-sm-12 ">
           <h1 className="font-weight-light text-center">
             MARCAS QUE REPARAMOS
           </h1>
@@ -25,7 +25,10 @@ const Marcas = () => {
         </div>
       </div>
       {/* FIN TITULO */}
-      <div className="row no-gutters mb-5">
+      {/* CARROUSEL init */}
+     
+
+      <div className="row no-gutters mb-5 ">
         <div className="col-sm-12 col-md-3 px-5">
           <img className="w-100" src={volcan} alt="volcan" />
         </div>

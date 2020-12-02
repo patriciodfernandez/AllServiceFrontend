@@ -1,82 +1,90 @@
-*{
+* {
   font-family: "Nunito Sans", sans-serif;
 }
 /* .grisnavbg{
   background-color: #afafaf;
 } */
-.letragorda{
+.letragorda {
   /* font-family: 'Passion One', cursive; */
-  font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
-.verdetext{
+.verdetext {
   /* color: #8da639; */
-  color: #ABC526;
+  color: #abc526;
 }
-.grisoscurotext{
+.grisoscurotext {
   color: #282828;
 }
-.grisoscurobg{
+.grisoscurobg {
   background-color: #282828;
 }
-.verdebg{
-  background-color: #ABC526;;
+.verdebg {
+  background-color: #abc526;
 }
-.grisclarobg{
+.grisclarobg {
   background-color: #444244;
 }
 
-.tamanio{
+.tamanio {
   font-size: small;
 }
 
-.fondonegro{
+.fondonegro {
   background-color: black;
 }
 
+/* contacto css */
+
+.fondoContacto {
+  background-image: url("https://s2.best-wallpaper.net/wallpaper/1920x1200/1709/Kitchen-design-furniture-modern-minimalist-style_1920x1200.jpg");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center; /* Center the image */
+}
 
 /*MEDIA QUERIES*/
 
 /*X-SMALL DEVICES PUBLICIDAD*/
 @media all and (max-width: 576px) {
-  .enchico{
+  .enchico {
     display: none;
   }
-  #serviciosMdlg{
+  #serviciosMdlg {
     display: none;
   }
 }
 
 /*SMALL DEVICES*/
 @media all and (min-width: 576px) and (max-width: 767px) {
-  .enchico{
+  .enchico {
     display: none;
   }
-  #serviciosMdlg{
+  #serviciosMdlg {
     display: none;
   }
 }
 
 /*MEDIUM DEVICES*/
 @media all and (min-width: 768px) and (max-width: 991px) {
-  .enchico{
+  .enchico {
     display: none;
   }
-  #serviciosSmall{
+  #serviciosSmall {
     display: none;
   }
 }
 
 /*LARGE DEVICES*/
 @media all and (min-width: 991px) and (max-width: 1200px) {
-  #serviciosSmall{
+  #serviciosSmall {
     display: none;
-  }  
+  }
 }
-  
-  /*XTRA LARGE DEVICES*/
+
+/*XTRA LARGE DEVICES*/
 @media all and (min-width: 1200px) {
-  #serviciosSmall{
+  #serviciosSmall {
     display: none;
   }
 }
