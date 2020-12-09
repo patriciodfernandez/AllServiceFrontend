@@ -1,6 +1,8 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ReactDOM from 'react-dom';
+
 import Inicio from "./Components/Principal/Inicio";
 import Historia from "./Components/Principal/Historia";
 import Marcas from "./Components/Principal/Marcas";
