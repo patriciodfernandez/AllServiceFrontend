@@ -36,6 +36,10 @@
   font-size: large;
 }
 
+#botonverde{
+  background-color:  #abc526;
+}
+
 /*Css Contacto */
 .text-label {
   color: #282828;
