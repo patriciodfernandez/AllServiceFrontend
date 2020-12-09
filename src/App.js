@@ -1,7 +1,8 @@
 import './App.css';
-import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ReactDOM from 'react-dom';
+
 import Inicio from "./Components/Principal/Inicio";
 import Historia from "./Components/Principal/Historia";
 import Marcas from "./Components/Principal/Marcas";
@@ -20,24 +21,6 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Inicio></Inicio>
-        </Route>
-        <Route exact path="/slider">
-          <Slider></Slider>
-        </Route>
-        <Route exact path="/quienessomos">
-          <QuienesSomos></QuienesSomos>
-        </Route>
-        <Route exact path="/nuestrosservicios">
-          <NuestrosServicios></NuestrosServicios>
-        </Route>
-        <Route exact path="/productosquereparamos">
-          <ProductosQReparamos></ProductosQReparamos>
-        </Route>
-        <Route exact path="/historia">
-          <Historia></Historia>
-        </Route>
-        <Route exact path="/marca">
-          <Marcas></Marcas>
         </Route>
         <Route exact path="/contacto">
           <Contacto></Contacto>
