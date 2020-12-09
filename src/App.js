@@ -13,6 +13,7 @@ import ProductosQReparamos from "./Components/Principal/ProductosQReparamos";
 import QuienesSomos from "./Components/Principal/QuienesSomos";
 import Slider from "./Components/Principal/Slider";
 import Contacto from "./Components/Contacto";
+import Whatsapp from "./Components/Common/Whatsapp"
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Contacto></Contacto>
         </Route>
       </Switch>
+      <Whatsapp></Whatsapp>
       <Footer></Footer>
     </Router>
 

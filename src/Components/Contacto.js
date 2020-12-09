@@ -2,12 +2,19 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelopeOpenText,
+  faMapMarkerAlt,
+  faPhoneAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookSquare,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import Alert from "react-bootstrap/Alert";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
-import contacto from "../assets/Contacto.jpg";
-
 
 const Contacto = () => {
   const [validated, setValidated] = useState(false);
@@ -65,17 +72,88 @@ const Contacto = () => {
 
   return (
     <div className="row no-gutters">
-      <div className="col-lg-6 p-5 nosm noxs nomd">
-        <img className=" w-100" src={contacto} alt="Imagen 1"></img>
+      <div className="col-lg-6 p-5 text-center nosm noxs nomd container p-5">
+        <h5 className="mb-3">
+          <FontAwesomeIcon
+            className="mr-2"
+            icon={faPhoneAlt}
+            color="#282828"
+            size="1x"
+          />
+          4239995 - 4233773
+        </h5>
+        <a
+          href="https://wa.me/5493815231792"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="letrasfooter text-dark"
+        >
+          <h5 className="mb-3">
+            <FontAwesomeIcon
+              className="mr-2"
+              icon={faWhatsapp}
+              color="#282828"
+              size="1x"
+            />
+            3815231792 (Service)
+          </h5>
+        </a>
+        <a
+          href="https://wa.me/5493816812468"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="letrasfooter text-dark"
+        >
+          <h5 className="mb-3">
+            <FontAwesomeIcon
+              className="mr-2"
+              icon={faWhatsapp}
+              color="#282828"
+              size="1x"
+            />
+            3816812468 (Repuestos)
+          </h5>
+        </a>
+        <a
+          href="https://www.google.com/maps/dir//All+Service,+Pcia+de+Corrientes+2514,+San+Miguel+de+Tucum%C3%A1n,+Tucum%C3%A1n/@-26.818799,-65.232068,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94225c59e8cf6725:0xd0ba3b86aeabd2d4!2m2!1d-65.2334578!2d-26.8167943!3e0?hl=es"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-dark"
+        >
+          <h5 className="mb-3">
+            <FontAwesomeIcon
+              className="mr-2"
+              icon={faMapMarkerAlt}
+              color="#282828"
+              size="1x"
+            />
+            Corrientes 2514 - San Miguel de Tucumán
+          </h5>
+        </a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7121.3296679872765!2d-65.23206769931612!3d-26.81879873867179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x94225c59e8cf6725%3A0xd0ba3b86aeabd2d4!2sall%20service%20tucuman!3m2!1d-26.816794299999998!2d-65.2334578!5e0!3m2!1ses!2sar!4v1607548696091!5m2!1ses!2sar"
+          width="400"
+          height="300"
+          frameborder="0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
       </div>
       <div className="col-sm-12 col-lg-6 container p-5">
-        <h3 className="mb-3"><FontAwesomeIcon
-                icon={faEnvelopeOpenText}
-                className="mr-1"
-                size="1x"
-              ></FontAwesomeIcon> Envíanos tu consulta</h3>
+        <h3 className="mb-3" id="consultatop">
+          <FontAwesomeIcon
+            icon={faEnvelopeOpenText}
+            className="mr-1"
+            size="1x"
+          ></FontAwesomeIcon>{" "}
+          Envíanos tu consulta
+        </h3>
         {error ? (
-          <Alert variant={"warning"}>Todos los campos son obligatorios, por favor asegúrese de ingresar datos válidos</Alert>
+          <Alert variant={"warning"}>
+            Todos los campos son obligatorios, por favor asegúrese de ingresar
+            datos válidos
+          </Alert>
         ) : null}
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
           <Form.Group controlId="fullName">
@@ -88,8 +166,7 @@ const Contacto = () => {
               name="user_name"
             />
           </Form.Group>
-          <Form.Group controlId="direccion">
-          </Form.Group>
+          <Form.Group controlId="direccion"></Form.Group>
           <Form.Group controlId="telefono">
             <Form.Label>Telefono</Form.Label>
             <Form.Control
@@ -109,19 +186,91 @@ const Contacto = () => {
               name="user_email"
             />
           </Form.Group>
-          
+
           <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Example textarea</Form.Label>
-            <Form.Control required as="textarea" rows={3} />
-          </Form.Group><Form.Text className="text-muted">
+            <Form.Label>Escribe tu consulta aquí</Form.Label>
+            <Form.Control required as="textarea" rows={4} />
+          </Form.Group>
+          <Form.Text className="text-muted">
             No compartiremos estos datos con nadie
           </Form.Text>
           <div className="text-right">
-            <Button variant="verdebg" id="botonverde" type="Submit" className="ml-auto text-dark">
+            <Button
+              variant="verdebg"
+              id="botonverde"
+              type="Submit"
+              className="ml-auto text-dark mt-2"
+            >
               Enviar
             </Button>
           </div>
         </Form>
+      </div>
+      <div className="col-lg-6 p-5 text-center nolg noxl container p-5">
+        <h5 className="mb-3">
+          <FontAwesomeIcon
+            className="mr-2"
+            icon={faPhoneAlt}
+            color="#282828"
+            size="1x"
+          />
+          4239995 - 4233773
+        </h5>
+        <a
+          href="https://wa.me/5493815231792"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="letrasfooter text-dark"
+        >
+          <h5 className="mb-3">
+            <FontAwesomeIcon
+              className="mr-2"
+              icon={faWhatsapp}
+              color="#282828"
+              size="1x"
+            />
+            3815231792 (Service)
+          </h5>
+        </a>
+        <a
+          href="https://wa.me/5493816812468"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="letrasfooter text-dark"
+        >
+          <h5 className="mb-3">
+            <FontAwesomeIcon
+              className="mr-2"
+              icon={faWhatsapp}
+              color="#282828"
+              size="1x"
+            />
+            3816812468 (Repuestos)
+          </h5>
+        </a>
+        <a
+          href="https://www.google.com/maps/dir//All+Service,+Pcia+de+Corrientes+2514,+San+Miguel+de+Tucum%C3%A1n,+Tucum%C3%A1n/@-26.818799,-65.232068,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94225c59e8cf6725:0xd0ba3b86aeabd2d4!2m2!1d-65.2334578!2d-26.8167943!3e0?hl=es"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-dark"
+        >
+          <h5 className="mb-3">
+            <FontAwesomeIcon
+              className="mr-2"
+              icon={faMapMarkerAlt}
+              color="#282828"
+              size="1x"
+            />
+            Corrientes 2514 - San Miguel de Tucumán
+          </h5>
+        </a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7121.3296679872765!2d-65.23206769931612!3d-26.81879873867179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x94225c59e8cf6725%3A0xd0ba3b86aeabd2d4!2sall%20service%20tucuman!3m2!1d-26.816794299999998!2d-65.2334578!5e0!3m2!1ses!2sar!4v1607548696091!5m2!1ses!2sar"
+          frameborder="0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
       </div>
     </div>
   );

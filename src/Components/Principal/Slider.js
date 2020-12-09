@@ -8,7 +8,7 @@ const Slider = () => {
     <div id="iniciotop">
       <Carousel>
         <Carousel.Item>
-          <img           />
+          <img className="d-block w-100" src={slider1} alt="Imagen 1" />
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100" src={slider2} alt="Imagen 2" />
