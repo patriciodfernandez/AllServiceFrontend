@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import * as emailjs from "emailjs-com";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 
-class ContactForm extends Component {
+class Contacto extends Component {
   state = {
     name: "",
     email: "",
@@ -113,10 +113,8 @@ class ContactForm extends Component {
             </div>
           </div>
         </div>
-        {/* <div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1780.3604091038494!2d-65.23453723906039!3d-26.817016737917598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c59e87a2f03%3A0xc7fd8a5ef5178b03!2sPcia%20de%20Corrientes%202514%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1607451661596!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div> */}
       </>
     );
   }
 }
-export default ContactForm;
+export default Contacto;
