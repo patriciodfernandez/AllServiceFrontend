@@ -22,6 +22,7 @@ const Footer = () => {
           <Nav.Link exact={true} href="/#inicio">
             <img src={logob} alt="logo del Footer" width="100px"></img>
           </Nav.Link>
+          <p className="text-light mt-4">&copy;Todos los derechos reservados</p>
         </div>
         <div className="col-sm-12 col-md-4 mb-4 mt-1">
           <div className="noxs nosm text-left">
