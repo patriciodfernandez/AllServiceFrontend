@@ -103,7 +103,7 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 exact={true}
-                href="/contacto/#contactotop"
+                href="/contacto"
                 className="nav-link text-light"
               >
                 CONTACTO

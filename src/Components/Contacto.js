@@ -141,7 +141,7 @@ const Contacto = () => {
         ></iframe>
       </div>
       <div className="col-sm-12 col-lg-6 container p-5">
-        <h3 className="mb-3" id="consultatop">
+        <h3 className="mb-3">
           <FontAwesomeIcon
             icon={faEnvelopeOpenText}
             className="mr-1"

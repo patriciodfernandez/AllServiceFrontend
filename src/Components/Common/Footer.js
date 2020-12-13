@@ -19,7 +19,7 @@ const Footer = () => {
     <div className="bg-dark">
       <div className="row no-gutters container px-5 pt-5">
         <div className="col-sm-12 col-md-4 mb-4 text-center">
-          <Nav.Link exact={true} href="/#iniciotop">
+          <Nav.Link exact={true} href="/#inicio">
             <img src={logob} alt="logo del Footer" width="100px"></img>
           </Nav.Link>
         </div>
@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="noxs nosm text-left">
           <Nav.Link
                 exact={true}
-                href="/#iniciotop"
+                href="/#inicio"
                 className="nav-link text-light mb-1 p-0"
               >
                 INICIO
@@ -48,7 +48,7 @@ const Footer = () => {
               </Nav.Link>
             <Nav.Link
                 exact={true}
-                href="/contacto/#contactotop"
+                href="/contacto"
                 className="nav-link text-light mb-1 p-0"
               >
                 CONTACTO
