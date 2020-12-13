@@ -30,11 +30,11 @@
   font-size: large;
 }
 
-#botonverde{
-  background-color:  #abc526;
+#botonverde {
+  background-color: #abc526;
 }
 
-.letrasfooter{
+.letrasfooter {
   color: white;
 }
 
@@ -47,11 +47,10 @@
   border-radius: 50%;
 }
 
-
-
-
-
-
+#productosqreparamos {
+  padding-top: 123px;
+  margin-top: -123px;
+}
 
 /*MEDIA QUERIES*/
 
@@ -60,12 +59,20 @@
   .noxs {
     display: none;
   }
+  #servicios, #inicio {
+    padding-top: 92px;
+    margin-top: -92px;
+  }
 }
 
 /*SMALL DEVICES*/
 @media all and (min-width: 576px) and (max-width: 767px) {
   .nosm {
     display: none;
+  }
+  #servicios, #inicio {
+    padding-top: 92px;
+    margin-top: -92px;
   }
 }
 
@@ -74,6 +81,10 @@
   .nomd {
     display: none;
   }
+  #servicios, #inicio {
+    padding-top: 92px;
+    margin-top: -92px;
+  }
 }
 
 /*LARGE DEVICES*/
@@ -81,11 +92,19 @@
   .nolg {
     display: none;
   }
+  #servicios, #inicio {
+    padding-top: 123px;
+    margin-top: -123px;
+  }
 }
 
 /*XTRA LARGE DEVICES*/
 @media all and (min-width: 1200px) {
   .noxl {
     display: none;
+  }
+  #servicios, #inicio {
+    padding-top: 123px;
+    margin-top: -123px;
   }
 }

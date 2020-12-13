@@ -5,7 +5,7 @@ import slider2 from "../../assets/images/slider-2.jpg";
 
 const Slider = () => {
   return (
-    <div id="iniciotop">
+    <div id="inicio">
       <Carousel>
         <Carousel.Item>
           <img className="d-block w-100" src={slider1} alt="Imagen 1" />
