@@ -5,7 +5,7 @@ import slider2 from "../../assets/images/slider-2.jpg";
 
 const Slider = () => {
   return (
-    <div id="iniciotop">
+    <div id="inicio">
       <Carousel>
         <Carousel.Item>
           <img className="d-block w-100" src={slider1} alt="Imagen 1" />
@@ -15,7 +15,7 @@ const Slider = () => {
         </Carousel.Item>
       </Carousel>
       <div className=" grisoscurobg p-5">
-          <h1 className="text-center verdetext letragorda mb-0">35 AÑOS DE TRAYECTORIA NOS AVALAN</h1>
+          <h1 className="text-center verdetext letragorda mb-0 font-italic">35 AÑOS DE TRAYECTORIA NOS AVALAN</h1>
       </div>
     </div>
   );

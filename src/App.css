@@ -1,15 +1,10 @@
 * {
   font-family: "Nunito Sans", sans-serif;
 }
-/* .grisnavbg{
-  background-color: #afafaf;
-} */
 .letragorda {
-  /* font-family: 'Passion One', cursive; */
   font-family: "Roboto", sans-serif;
 }
 .verdetext {
-  /* color: #8da639; */
   color: #abc526;
 }
 .grisoscurotext {
@@ -24,7 +19,6 @@
 .grisclarobg {
   background-color: #444244;
 }
-
 .tamanio {
   font-size: small;
 }
@@ -36,37 +30,38 @@
   font-size: large;
 }
 
-/*Css Contacto */
-.text-label {
-  color: #282828;
+#botonverde {
+  background-color: #abc526;
 }
-.back{
-  background-color:#abc526 !important;
-}
-.backgrey{
-  opacity: 0.7;
-  background-color:#282828 !important;
-  
-}
-/*Css Contacto */
-.textgrey {
-  color: #444244;
 
+.letrasfooter {
+  color: white;
 }
-.textgreen {
-  color: #abc526;
 
+#whatsapp {
+  width: 100px;
+  position: fixed;
+  z-index: 9;
+  bottom: 40px;
+  left: 25px;
+  border-radius: 50%;
 }
-/*Css Contacto */
-.textdark {
-  color: #282828;
+
+#productosqreparamos {
+  padding-top: 123px;
+  margin-top: -123px;
 }
+
 /*MEDIA QUERIES*/
 
 /*X-SMALL DEVICES PUBLICIDAD*/
 @media all and (max-width: 576px) {
   .noxs {
     display: none;
+  }
+  #servicios, #inicio {
+    padding-top: 92px;
+    margin-top: -92px;
   }
 }
 
@@ -75,12 +70,20 @@
   .nosm {
     display: none;
   }
+  #servicios, #inicio {
+    padding-top: 92px;
+    margin-top: -92px;
+  }
 }
 
 /*MEDIUM DEVICES*/
 @media all and (min-width: 768px) and (max-width: 991px) {
   .nomd {
     display: none;
+  }
+  #servicios, #inicio {
+    padding-top: 92px;
+    margin-top: -92px;
   }
 }
 
@@ -89,11 +92,19 @@
   .nolg {
     display: none;
   }
+  #servicios, #inicio {
+    padding-top: 123px;
+    margin-top: -123px;
+  }
 }
 
 /*XTRA LARGE DEVICES*/
 @media all and (min-width: 1200px) {
   .noxl {
     display: none;
+  }
+  #servicios, #inicio {
+    padding-top: 123px;
+    margin-top: -123px;
   }
 }

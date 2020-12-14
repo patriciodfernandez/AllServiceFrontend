@@ -5,9 +5,9 @@ import restauraciones from "../../assets/images/restauraciones.jpg";
 
 const NuestrosServicios = () => {
   return (
-    <div>
+    <div id="servicios">
       {/* TITULO GRANDE */}
-      <div className="verdebg p-5" id="servicios">
+      <div className="verdebg p-5">
         <h1 className="text-center grisoscurotext letragorda mb-0">
           NUESTROS SERVICIOS
         </h1>
