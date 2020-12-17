@@ -10,11 +10,12 @@ const Inicio = () => {
   return (
     <div>
       <Slider></Slider>
-      <QuienesSomos></QuienesSomos>
-      <NuestrosServicios></NuestrosServicios>
       <ProductosQReparamos></ProductosQReparamos>
-      <Historia></Historia>
       <Marcas></Marcas>
+      <NuestrosServicios></NuestrosServicios>
+      <QuienesSomos></QuienesSomos>
+      <Historia></Historia>
+      
     </div>
   );
 };

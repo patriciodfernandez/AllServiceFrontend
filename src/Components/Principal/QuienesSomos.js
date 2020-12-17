@@ -6,7 +6,9 @@ const QuienesSomos = () => {
   return (
     <div>
       {/* DIV PPAL */}
-
+      <div className="fondonegro p-5">
+          <h2 className="text-center verdetext letragorda mb-0 font-italic">35 AÑOS DE TRAYECTORIA NOS AVALAN</h2>
+      </div>
       {/* DIV NORMAL */}
       <div className="nomd">
         <div className="row no-gutters">

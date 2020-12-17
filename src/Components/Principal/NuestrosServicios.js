@@ -7,13 +7,13 @@ const NuestrosServicios = () => {
   return (
     <div id="servicios">
       {/* TITULO GRANDE */}
-      <div className="verdebg p-5">
+      <div className="verdebg p-5 mt-5">
         <h1 className="text-center grisoscurotext letragorda mb-0">
           NUESTROS SERVICIOS
         </h1>
       </div>
       {/* DISPOSICION PARA XL Y LARGE */}
-      <div className="noxs nosm nomd">
+      <div className="noxs nosm nomd ">
         <div className="row no-gutters">
           <div className="col-sm-12 col-md-6 p-0 m-0">
             <img
@@ -80,7 +80,7 @@ const NuestrosServicios = () => {
         </div>
       </div>
       {/* DISPOSICION DE COLUMNAS PARA MD */}
-      <div className="noxs nosm nolg noxl">
+      <div className="noxs nosm nolg noxl ">
         <div className="row no-gutters">
           <div className="col-sm-12 col-md-6 p-0 m-0">
             <img
@@ -147,7 +147,7 @@ const NuestrosServicios = () => {
         </div>
       </div>
       {/* DISOSICION DE COLUMNAS PARA SMALL Y XSMALL*/}
-      <div className="nomd nolg noxl">
+      <div className="nomd nolg noxl ">
         <div className="row no-gutters">
           <div className="col-sm-12 col-md-6 p-0 m-0">
             <img
